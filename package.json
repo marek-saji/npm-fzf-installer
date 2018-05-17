@@ -1,0 +1,29 @@
+{
+  "name": "fzf-installer",
+  "version": "0.0.0",
+  "description": "Install latest version of fzf.",
+  "scripts": {
+    "test": "test -x ./fzf",
+    "postinstall": "bash install.sh"
+  },
+  "bin": {
+    "fzf": "./bin/fzf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marek-saji/npm-fzf-installer.git"
+  },
+  "keywords": [
+    "fzf",
+    "fuzzy",
+    "search",
+    "cli",
+    "installer"
+  ],
+  "author": "Marek ‘saji’ Augustynowicz <marek.aug@gmail.com> (http://noplacelikecode.redrice.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marek-saji/npm-fzf-installer/issues"
+  },
+  "homepage": "https://github.com/marek-saji/npm-fzf-installer#readme"
+}
