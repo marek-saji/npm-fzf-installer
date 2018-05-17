@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "fzf has not been properly installed"
+exit 1

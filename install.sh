@@ -21,4 +21,6 @@ echo "Downloading installer ..."
 ${FETCH} "${INSTALL_URL}"
 
 echo "Running installer ..."
+# Remove existing dummy bin/fzf
+rm bin/fzf
 bash "${INSTALL_NAME}" --bin
