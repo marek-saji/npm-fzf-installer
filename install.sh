@@ -23,4 +23,7 @@ ${FETCH} "${INSTALL_URL}"
 echo "Running installer ..."
 # Remove existing dummy bin/fzf
 rm bin/fzf
-bash "${INSTALL_NAME}" --bin
+# Restrict $PATH to essencials to prevent fzf from locating any
+# user-installed fzf insttances, because then it’s linked to bin/fzf
+# and that may end up hanging up install script.
+PATH=/bin:/usr/bin bash "${INSTALL_NAME}" --bin
